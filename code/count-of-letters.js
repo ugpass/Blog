@@ -1,0 +1,1 @@
+function flatten(t,n="",o={}){for(const e in t)if(t.hasOwnProperty(e)){let u=`${n}${e}`;"object"==typeof t[e]?flatten(t[e],u+".",o):o[u]=t[e]}return o}var input={a:1,b:[1,2,{c:!0},[3]],d:{e:2,f:3},g:null},output=flatten(input);console.log(output);
